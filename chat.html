@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat con Instructores - TutoApp</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="TutoApp Logo">
+                <h1>TutoApp</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="cursos.html">Cursos</a></li>
+                    <li><a href="chat.html" class="active">Chat</a></li>
+                    <li><a href="acerca.html">Acerca de</a></li>
+                    <li><a href="#" class="btn-login">Iniciar Sesión</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="chat-container">
+        <div class="container">
+            <div class="chat-sidebar">
+                <div class="user-profile">
+                    <img src="images/avatar-profesor.jpg" alt="Usuario">
+                    <h3>Nicolas Moya</h3>
+                    <p>Activo ahora</p>
+                </div>
+                <div class="search-chat">
+                    <input type="text" placeholder="Buscar chat...">
+                </div>
+                <div class="chat-list">
+                    <div class="chat-item active">
+                        <img src="images/avatar-profesor.jpg" alt="Instructor">
+                        <div class="chat-info">
+                            <h4>Nicolas Moya</h4>
+                            <p>Cómo cambiar un neumático</p>
+                            <span>Hoy, 10:30 AM</span>
+                        </div>
+                    </div>
+                    <div class="chat-item">
+                        <img src="images/avatar-profesor.jpg" alt="Instructor">
+                        <div class="chat-info">
+                            <h4>María González</h4>
+                            <p>Cocina básica</p>
+                            <span>Ayer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-main">
+                <div class="chat-header">
+                    <div class="chat-partner">
+                        <img src="images/avatar-profesor.jpg" alt="Instructor">
+                        <div>
+                            <h3>Nicolas Moya</h3>
+                            <p>Instructor - Cómo cambiar un neumático</p>
+                        </div>
+                    </div>
+                    <div class="chat-actions">
+                        <button><i class="fas fa-phone"></i></button>
+                        <button><i class="fas fa-video"></i></button>
+                        <button><i class="fas fa-ellipsis-v"></i></button>
+                    </div>
+                </div>
+                <div class="chat-messages">
+                    <div class="message-date">
+                        <span>30 Nov 2023</span>
+                    </div>
+                    <div class="message received">
+                        <img src="images/avatar-profesor.jpg" alt="Instructor">
+                        <div class="message-content">
+                            <p>Hola, ¿en qué puedo ayudarte hoy?</p>
+                            <span>9:41 AM</span>
+                        </div>
+                    </div>
+                    <div class="message sent">
+                        <div class="message-content">
+                            <p>Hola profesor, tengo algunas dudas sobre el paso 3 del curso</p>
+                            <span>9:45 AM</span>
+                        </div>
+                    </div>
+                    <div class="message received">
+                        <img src="images/avatar-profesor.jpg" alt="Instructor">
+                        <div class="message-content">
+                            <p>Claro, dime exactamente qué parte no entendiste</p>
+                            <span>9:46 AM</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-input">
+                    <input type="text" placeholder="Escribe tu mensaje...">
+                    <button><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="TutoApp Logo">
+                    <h3>TutoApp</h3>
+                    <p>Aprende habilidades prácticas de forma sencilla.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="cursos.html">Cursos</a></li>
+                        <li><a href="chat.html">Chat</a></li>
+                        <li><a href="acerca.html">Acerca de</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contacto</h4>
+                    <p>info@tutoapp.com</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 TutoApp. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/chat.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

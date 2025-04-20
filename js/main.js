@@ -1,43 +1,50 @@
-// Menú móvil
+// Mobile menu toggle
 document.addEventListener('DOMContentLoaded', function() {
-    const menuBtn = document.querySelector('.mobile-menu');
-    const navMenu = document.querySelector('nav ul');
-    
-    if (menuBtn && navMenu) {
-      // Alternar menú al hacer clic
-      menuBtn.addEventListener('click', function() {
-        navMenu.style.display = navMenu.style.display === 'flex' ? 'none' : 'flex';
-      });
-      
-      // Cerrar menú al seleccionar opción (en móviles)
-      const navLinks = document.querySelectorAll('nav ul li a');
-      navLinks.forEach(link => {
-        link.addEventListener('click', function() {
-          if (window.innerWidth <= 768) {
-            navMenu.style.display = 'none';
+  // Mobile menu toggle would go here
+  console.log('Main JS loaded');
+  
+  // Smooth scrolling for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          
+          const targetId = this.getAttribute('href');
+          if (targetId === '#') return;
+          
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+              targetElement.scrollIntoView({
+                  behavior: 'smooth'
+              });
           }
-        });
       });
-      
-      // Ajustar menú al cambiar tamaño de pantalla
-      window.addEventListener('resize', function() {
-        if (window.innerWidth > 768) {
-          navMenu.style.display = 'flex';
-        } else {
-          navMenu.style.display = 'none';
-        }
-      });
-    }
-    
-    // Efecto especial para botones de donación
-    const donationBtns = document.querySelectorAll('.btn-primary');
-    donationBtns.forEach(btn => {
-      btn.addEventListener('mouseenter', function() {
-        this.innerHTML = '❤️ ' + this.textContent + ' ❤️';
-      });
-      
-      btn.addEventListener('mouseleave', function() {
-        this.innerHTML = this.textContent;
-      });
-    });
   });
+  
+  // Active link highlighting
+  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+  document.querySelectorAll('nav a').forEach(link => {
+      const linkPage = link.getAttribute('href').split('/').pop();
+      if (linkPage === currentPage) {
+          link.classList.add('active');
+      }
+  });
+  
+  // Login button functionality
+  const loginButton = document.querySelector('.login-btn');
+  if (loginButton) {
+      loginButton.addEventListener('click', function(e) {
+          e.preventDefault();
+          alert('Funcionalidad de inicio de sesión. En una aplicación real, esto abriría un modal o redirigiría a una página de login.');
+      });
+  }
+  
+  // Primary button functionality
+  document.querySelectorAll('.primary-btn').forEach(button => {
+      if (!button.classList.contains('login-btn')) {
+          button.addEventListener('click', function(e) {
+              e.preventDefault();
+              alert('Funcionalidad de creación de cuenta. En una aplicación real, esto redirigiría a un formulario de registro.');
+          });
+      }
+  });
+});

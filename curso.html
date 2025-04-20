@@ -10,90 +10,128 @@
 <body>
     <header>
         <div class="container">
-            <div class="logo">
-                <img src="images/logo.png" alt="TutoApp Logo">
-                <h1>TutoApp</h1>
-            </div>
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="TutoApp Logo">
+                <span>TutoApp</span>
+            </a>
             <nav>
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="cursos.html">Cursos</a></li>
                     <li><a href="chat.html">Chat</a></li>
                     <li><a href="acerca.html">Acerca de</a></li>
-                    <li><a href="#" class="btn-login">Iniciar Sesión</a></li>
                 </ul>
             </nav>
-            <div class="mobile-menu">
-                <i class="fas fa-bars"></i>
-            </div>
+            <a href="#" class="btn login-btn">Iniciar Sesión</a>
         </div>
     </header>
 
-    <section class="course-hero">
-        <div class="container">
-            <h2>Cómo cambiar un neumático</h2>
-            <p>Aprender a cambiar un neumático es una habilidad esencial para cualquier conductor.</p>
-        </div>
-    </section>
-
-    <section class="course-content">
+    <section class="course-detail">
         <div class="container">
             <div class="course-main">
-                <div class="video-container">
-                    <iframe width="100%" height="400" src="https://www.youtube.com/embed/joBmbh0AGSQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h1>Cómo cambiar un neumático</h1>
+                <p class="course-description">Aprender a cambiar un neumático es una habilidad esencial para cualquier conductor. En este curso, te guiaremos paso a paso para que puedas hacerlo sin complicaciones y con total seguridad. ¡Sigue las instrucciones y prepárate para cualquier emergencia en la carretera!</p>
+                
+                <div class="course-meta">
+                    <div class="instructor">
+                        <img src="img/profesor.jpg" alt="Nicolás Moya">
+                        <span>Nicolás Moya</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 40%;"></div>
+                        </div>
+                        <span>Progreso: 40%</span>
+                    </div>
                 </div>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 40%;"></div>
-                    <span>Progreso: 40%</span>
-                </div>
-                <div class="course-description">
-                    <h3>Descripción del curso</h3>
-                    <p>En este curso, te guiaremos paso a paso para que puedas cambiar un neumático sin complicaciones y con total seguridad. ¡Sigue las instrucciones y prepárate para cualquier emergencia en la carretera!</p>
-                    <p>Este video te mostrará cada paso necesario para cambiar un neumático correctamente, desde detener el vehículo en un lugar seguro hasta colocar la llanta de repuesto.</p>
+                
+                <div class="course-content">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/example" frameborder="0" allowfullscreen></iframe>
+                        <p>Este video te mostrará cada paso necesario para cambiar un neumático correctamente, desde detener el vehículo en un lugar seguro hasta colocar la llanta de repuesto.</p>
+                    </div>
+                    
+                    <div class="materials">
+                        <h3>Herramientas Necesarias</h3>
+                        <p>(Haz clic para ver opciones de compra)</p>
+                        <ul>
+                            <li><i class="fas fa-wrench"></i> <strong>Gato hidráulico o mecánico</strong> – Levanta el vehículo. <a href="#" class="buy-link">🔗 Comprar</a></li>
+                            <li><i class="fas fa-wrench"></i> <strong>Llave de cruz o de impacto</strong> – Afloja y aprieta tuercas. <a href="#" class="buy-link">🔗 Comprar</a></li>
+                            <li><i class="fas fa-wrench"></i> <strong>Llanta de repuesto</strong> – Asegúrate de que esté inflada. <a href="#" class="buy-link">🔗 Comprar</a></li>
+                            <li><i class="fas fa-wrench"></i> <strong>Triángulos de seguridad</strong> – Señaliza el área. <a href="#" class="buy-link">🔗 Comprar</a></li>
+                            <li><i class="fas fa-wrench"></i> <strong>Guantes de trabajo</strong> – Protege tus manos. <a href="#" class="buy-link">🔗 Comprar</a></li>
+                            <li><i class="fas fa-wrench"></i> <strong>Linterna</strong> – Útil en situaciones de poca luz. <a href="#" class="buy-link">🔗 Comprar</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="steps">
+                        <h3>Pasos para cambiar un neumático</h3>
+                        <ol>
+                            <li>Busca un lugar seguro y plano para detener el vehículo.</li>
+                            <li>Activa las luces de emergencia y coloca los triángulos de seguridad.</li>
+                            <li>Aplica el freno de mano y coloca calzos en las ruedas opuestas.</li>
+                            <li>Afloja las tuercas de la rueda pinchada (sin quitarlas completamente).</li>
+                            <li>Coloca el gato en el punto indicado del vehículo y levanta hasta que la rueda quede libre.</li>
+                            <li>Retira completamente las tuercas y luego la rueda pinchada.</li>
+                            <li>Coloca la rueda de repuesto y aprieta las tuercas a mano.</li>
+                            <li>Baja el vehículo con el gato y luego aprieta las tuercas con la llave en forma de cruz.</li>
+                            <li>Guarda todas las herramientas y la rueda pinchada.</li>
+                            <li>Revisa la presión de la rueda de repuesto y dirígete a un taller para reparar o reemplazar el neumático.</li>
+                        </ol>
+                    </div>
                 </div>
             </div>
+            
             <div class="course-sidebar">
-                <div class="instructor">
-                    <img src="images/avatar-profesor.jpg" alt="Instructor">
-                    <h4>Nicolas Moya</h4>
-                    <p>Instructor certificado</p>
-                    <a href="chat.html" class="btn-secondary">Chat con el instructor</a>
-                </div>
-                <div class="tools">
-                    <h4>Herramientas Necesarias</h4>
-                    <ul>
-                        <li><i class="fas fa-wrench"></i> Gato hidráulico o mecánico – Levanta el vehículo. <a href="#">Comprar</a></li>
-                        <li><i class="fas fa-wrench"></i> Llave de cruz o de impacto – Afloja y aprieta tuercas. <a href="#">Comprar</a></li>
-                        <li><i class="fas fa-wrench"></i> Llanta de repuesto – Asegúrate de que esté inflada. <a href="#">Comprar</a></li>
-                        <li><i class="fas fa-wrench"></i> Triángulos de seguridad – Señaliza el área. <a href="#">Comprar</a></li>
-                        <li><i class="fas fa-wrench"></i> Guantes de trabajo – Protege tus manos. <a href="#">Comprar</a></li>
-                        <li><i class="fas fa-wrench"></i> Linterna – Útil en situaciones de poca luz. <a href="#">Comprar</a></li>
+                <div class="sidebar-section">
+                    <h3>Contenido del curso</h3>
+                    <ul class="content-list">
+                        <li class="active"><i class="far fa-play-circle"></i> Introducción</li>
+                        <li><i class="far fa-play-circle"></i> Herramientas necesarias</li>
+                        <li><i class="far fa-play-circle"></i> Paso 1: Ubicación segura</li>
+                        <li><i class="far fa-play-circle"></i> Paso 2: Preparación</li>
+                        <li><i class="far fa-play-circle"></i> Paso 3: Aflojar tuercas</li>
+                        <li><i class="far fa-play-circle"></i> Paso 4: Uso del gato</li>
+                        <li><i class="far fa-play-circle"></i> Paso 5: Cambio de rueda</li>
+                        <li><i class="far fa-play-circle"></i> Paso 6: Apretar tuercas</li>
+                        <li><i class="far fa-play-circle"></i> Consejos finales</li>
                     </ul>
                 </div>
-                <div class="donation-box">
-                    <h4>¿Te gustó el curso?</h4>
-                    <p>Apoya al instructor con una donación.</p>
-                    <a href="#" class="btn-primary">Hacer donación</a>
+                
+                <div class="sidebar-section">
+                    <h3>Chat con el instructor</h3>
+                    <p>¿Tienes dudas sobre este curso? Chatea con el instructor en tiempo real.</p>
+                    <a href="chat.html" class="btn primary-btn">Ir al chat</a>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="related-courses">
-        <div class="container">
-            <h3>Cursos relacionados</h3>
-            <div class="courses-grid">
-                <div class="course-card">
-                    <img src="images/curso-bricolaje.jpg" alt="Mantenimiento básico">
-                    <h4>Mantenimiento básico del auto</h4>
-                    <p>Aprende a revisar niveles y hacer mantenimiento preventivo.</p>
-                    <a href="#" class="btn-secondary">Ver curso</a>
-                </div>
-                <div class="course-card">
-                    <img src="images/curso-cocina.jpg" alt="Cambiar aceite">
-                    <h4>Cómo cambiar el aceite del auto</h4>
-                    <p>Guía paso a paso para cambiar el aceite tú mismo.</p>
-                    <a href="#" class="btn-secondary">Ver curso</a>
+                
+                <div class="sidebar-section">
+                    <h3>Calendario</h3>
+                    <div class="mini-calendar">
+                        <div class="calendar-header">
+                            <button><i class="fas fa-chevron-left"></i></button>
+                            <span>Noviembre 2023</span>
+                            <button><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                        <div class="calendar-days">
+                            <div class="day-name">L</div>
+                            <div class="day-name">M</div>
+                            <div class="day-name">M</div>
+                            <div class="day-name">J</div>
+                            <div class="day-name">V</div>
+                            <div class="day-name">S</div>
+                            <div class="day-name">D</div>
+                            
+                            <!-- Days would be populated here -->
+                            <div class="day">29</div>
+                            <div class="day">30</div>
+                            <div class="day active">1</div>
+                            <div class="day">2</div>
+                            <div class="day">3</div>
+                            <div class="day">4</div>
+                            <div class="day">5</div>
+                            <!-- More days... -->
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -101,35 +139,27 @@
 
     <footer>
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-logo">
-                    <img src="images/logo.png" alt="TutoApp Logo">
-                    <h3>TutoApp</h3>
-                    <p>Aprende habilidades prácticas de forma sencilla.</p>
-                </div>
-                <div class="footer-links">
-                    <h4>Enlaces</h4>
-                    <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="cursos.html">Cursos</a></li>
-                        <li><a href="chat.html">Chat</a></li>
-                        <li><a href="acerca.html">Acerca de</a></li>
-                    </ul>
-                </div>
-                <div class="footer-contact">
-                    <h4>Contacto</h4>
-                    <p>info@tutoapp.com</p>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
+            <div class="footer-logo">
+                <img src="img/logo.png" alt="TutoApp Logo">
+                <span>TutoApp</span>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2023 TutoApp. Todos los derechos reservados.</p>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="cursos.html">Cursos</a></li>
+                    <li><a href="chat.html">Chat</a></li>
+                    <li><a href="acerca.html">Acerca de</a></li>
+                </ul>
             </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 TutoApp. Todos los derechos reservados.</p>
         </div>
     </footer>
 

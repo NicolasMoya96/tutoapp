@@ -10,132 +10,86 @@
 <body>
     <header>
         <div class="container">
-            <div class="logo">
-                <img src="images/logo.png" alt="TutoApp Logo">
-                <h1>TutoApp</h1>
-            </div>
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="TutoApp Logo">
+                <span>TutoApp</span>
+            </a>
             <nav>
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
-                    <li><a href="cursos.html" class="active">Cursos</a></li>
+                    <li><a href="cursos.html">Cursos</a></li>
                     <li><a href="chat.html">Chat</a></li>
                     <li><a href="acerca.html">Acerca de</a></li>
-                    <li><a href="#" class="btn-login">Iniciar Sesión</a></li>
                 </ul>
             </nav>
-            <div class="mobile-menu">
-                <i class="fas fa-bars"></i>
-            </div>
+            <a href="#" class="btn login-btn">Iniciar Sesión</a>
         </div>
     </header>
 
     <section class="courses-hero">
         <div class="container">
-            <h2>Explora nuestros cursos</h2>
+            <h1>Explora nuestros cursos</h1>
             <p>Aprende desde cambiar un neumático hasta reparar un grifo con nuestros tutoriales paso a paso.</p>
         </div>
     </section>
 
-    <section class="courses-list">
+    <section class="all-courses">
         <div class="container">
-            <div class="search-filter">
-                <input type="text" placeholder="Buscar cursos...">
-                <select>
-                    <option value="all">Todas las categorías</option>
-                    <option value="automotriz">Automotriz</option>
-                    <option value="hogar">Hogar</option>
-                    <option value="cocina">Cocina</option>
-                    <option value="costura">Costura</option>
-                </select>
+            <div class="filter-options">
+                <div class="search-box">
+                    <input type="text" placeholder="Buscar cursos...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                <div class="category-filter">
+                    <select>
+                        <option value="all">Todas las categorías</option>
+                        <option value="automotriz">Automotriz</option>
+                        <option value="hogar">Hogar</option>
+                        <option value="cocina">Cocina</option>
+                        <option value="costura">Costura</option>
+                    </select>
+                </div>
             </div>
-
+            
             <div class="courses-grid">
-                <div class="course-card">
-                    <img src="images/curso-neumaticos.jpg" alt="Cambiar neumático">
+                <a href="curso.html" class="course-card">
+                    <img src="img/neumatico.jpg" alt="Cómo cambiar un neumático">
                     <div class="course-info">
                         <h3>Cómo cambiar un neumático</h3>
                         <p>Aprende esta habilidad esencial para cualquier conductor.</p>
                         <div class="course-meta">
-                            <span><i class="fas fa-user"></i> Nicolas Moya</span>
-                            <span><i class="fas fa-clock"></i> 45 min</span>
+                            <span><i class="far fa-clock"></i> 45 min</span>
+                            <span><i class="fas fa-user"></i> Nicolás Moya</span>
                         </div>
-                        <a href="curso.html" class="btn-primary">Ver curso</a>
                     </div>
-                </div>
-                <div class="course-card">
-                    <img src="images/curso-cocina.jpg" alt="Cocina básica">
+                </a>
+                
+                <a href="#" class="course-card">
+                    <img src="img/cocina.jpg" alt="Cocina básica para principiantes">
                     <div class="course-info">
                         <h3>Cocina básica para principiantes</h3>
-                        <p>Domina las técnicas fundamentales de cocina.</p>
+                        <p>Domina las técnicas culinarias fundamentales.</p>
                         <div class="course-meta">
+                            <span><i class="far fa-clock"></i> 2 h 30 min</span>
                             <span><i class="fas fa-user"></i> María González</span>
-                            <span><i class="fas fa-clock"></i> 1h 20min</span>
                         </div>
-                        <a href="#" class="btn-primary">Ver curso</a>
                     </div>
-                </div>
-                <div class="course-card">
-                    <img src="images/curso-bricolaje.jpg" alt="Reparaciones hogar">
+                </a>
+                
+                <a href="#" class="course-card">
+                    <img src="img/bricolaje.jpg" alt="Reparaciones básicas del hogar">
                     <div class="course-info">
                         <h3>Reparaciones básicas del hogar</h3>
                         <p>Aprende a solucionar problemas comunes en casa.</p>
                         <div class="course-meta">
-                            <span><i class="fas fa-user"></i> Carlos Rojas</span>
-                            <span><i class="fas fa-clock"></i> 1h 5min</span>
+                            <span><i class="far fa-clock"></i> 1 h 15 min</span>
+                            <span><i class="fas fa-user"></i> Carlos Pérez</span>
                         </div>
-                        <a href="#" class="btn-primary">Ver curso</a>
                     </div>
-                </div>
-                <div class="course-card">
-                    <img src="images/curso-costura.jpg" alt="Costura básica">
+                </a>
+                
+                <a href="#" class="course-card">
+                    <img src="img/costura.jpg" alt="Costura básica: arreglos y modificaciones">
                     <div class="course-info">
-                        <h3>Costura básica para principiantes</h3>
-                        <p>Aprende a coser botones, hacer dobladillos y más.</p>
-                        <div class="course-meta">
-                            <span><i class="fas fa-user"></i> Laura Fernández</span>
-                            <span><i class="fas fa-clock"></i> 50 min</span>
-                        </div>
-                        <a href="#" class="btn-primary">Ver curso</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-logo">
-                    <img src="images/logo.png" alt="TutoApp Logo">
-                    <h3>TutoApp</h3>
-                    <p>Aprende habilidades prácticas de forma sencilla.</p>
-                </div>
-                <div class="footer-links">
-                    <h4>Enlaces</h4>
-                    <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="cursos.html">Cursos</a></li>
-                        <li><a href="chat.html">Chat</a></li>
-                        <li><a href="acerca.html">Acerca de</a></li>
-                    </ul>
-                </div>
-                <div class="footer-contact">
-                    <h4>Contacto</h4>
-                    <p>info@tutoapp.com</p>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2023 TutoApp. Todos los derechos reservados.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="js/main.js"></script>
-</body>
-</html>
+                        <h3>Costura básica: arreglos y modificaciones</h3>
+                        <p>Aprende

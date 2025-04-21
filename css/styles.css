@@ -1,4 +1,4 @@
-/* Global Styles */
+/* Estilos globales */
 :root {
   --primary-color: #4a6fa5;
   --secondary-color: #166088;
@@ -89,7 +89,7 @@ img {
   color: white;
 }
 
-/* Header Styles */
+/* Estilos de encabezado */
 header {
   background-color: white;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -136,7 +136,7 @@ nav ul li a:hover {
   color: var(--primary-color);
 }
 
-/* Hero Section */
+/* Sección de héroe */
 .hero {
   padding: 150px 0 80px;
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
@@ -169,7 +169,7 @@ nav ul li a:hover {
   flex: 1;
 }
 
-/* Features Section */
+/* Sección de Características */
 .features {
   padding: 80px 0;
   background-color: white;
@@ -211,7 +211,8 @@ nav ul li a:hover {
   font-size: 1.3rem;
 }
 
-/* Popular Courses Section */
+
+/*Sección de Cursos Populares*/
 .popular-courses {
   padding: 80px 0;
   background-color: #f8f9fa;
@@ -258,7 +259,7 @@ nav ul li a:hover {
   color: var(--gray-color);
 }
 
-/* Footer Styles */
+/* Estilos de pie de página */
 footer {
   background-color: var(--dark-color);
   color: white;
@@ -312,7 +313,7 @@ footer .container {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* About Page Styles */
+/* Acerca de los estilos de página */
 .about-hero {
   padding: 150px 0 80px;
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
@@ -414,7 +415,7 @@ footer .container {
   font-size: 1.2rem;
 }
 
-/* Courses Page Styles */
+/* Estilos de página de cursos */
 .courses-hero {
   padding: 150px 0 80px;
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
@@ -546,7 +547,7 @@ footer .container {
   border-color: var(--primary-color);
 }
 
-/* Course Detail Page Styles */
+/* Estilos de la página de detalles del curso */
 .course-detail {
   padding: 150px 0 80px;
   background-color: #f8f9fa;
@@ -754,7 +755,7 @@ footer .container {
   color: white;
 }
 
-/* Chat Page Styles */
+/* Estilos de página de chat */
 .chat-container {
   padding: 120px 0 50px;
   background-color: #f8f9fa;
@@ -984,7 +985,7 @@ footer .container {
   font-size: 1.2rem;
 }
 
-/* Responsive Styles */
+/* Estilos responsivos */
 @media (max-width: 992px) {
   .hero .container {
       flex-direction: column;

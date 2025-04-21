@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const sendButton = document.getElementById('send-button');
     const chatMessages = document.getElementById('chat-messages');
     
-    // Function to add a new message to the chat
+    // Función para agregar un nuevo mensaje al chat
     function addMessage(text, isReceived) {
         const messageDiv = document.createElement('div');
         messageDiv.className = `message ${isReceived ? 'received' : 'sent'}`;
@@ -26,18 +26,18 @@ document.addEventListener('DOMContentLoaded', function() {
         
         chatMessages.appendChild(messageDiv);
         
-        // Scroll to the bottom of the chat
+        // Desplácese hasta la parte inferior del chat
         chatMessages.scrollTop = chatMessages.scrollHeight;
     }
     
-    // Handle sending a message
+    // Manejar el envío de un mensaje
     function sendMessage() {
         const messageText = messageInput.value.trim();
         if (messageText) {
             addMessage(messageText, false);
             messageInput.value = '';
             
-            // Simulate a received response after a short delay
+            // Simular una respuesta recibida después de un breve retraso
             setTimeout(() => {
                 const responses = [
                     "Gracias por tu mensaje. ¿En qué más puedo ayudarte?",
@@ -52,17 +52,17 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
-    // Send message when button is clicked
+    // Enviar mensaje cuando se hace clic en el botón
     sendButton.addEventListener('click', sendMessage);
     
-    // Send message when Enter key is pressed
+   // Envía un mensaje cuando se presiona la tecla Enter
     messageInput.addEventListener('keypress', function(e) {
         if (e.key === 'Enter') {
             sendMessage();
         }
     });
     
-    // Initial greeting from the instructor
+    // Saludo inicial del instructor
     setTimeout(() => {
         addMessage("Hola, ¿en qué puedo ayudarte hoy?", true);
     }, 500);

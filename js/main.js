@@ -1,9 +1,10 @@
-// Mobile menu toggle
+// Alternar menú móvil
 document.addEventListener('DOMContentLoaded', function() {
-  // Mobile menu toggle would go here
+  // El menú móvil cambiaría aquí
   console.log('Main JS loaded');
   
-  // Smooth scrolling for anchor links
+  
+// Desplazamiento suave para enlaces de anclaje
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
           e.preventDefault();
@@ -20,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
       });
   });
   
-  // Active link highlighting
+  // Resaltado de enlaces activos
   const currentPage = window.location.pathname.split('/').pop() || 'index.html';
   document.querySelectorAll('nav a').forEach(link => {
       const linkPage = link.getAttribute('href').split('/').pop();
@@ -29,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
   });
   
-  // Login button functionality
+// Funcionalidad del botón de inicio de sesión
   const loginButton = document.querySelector('.login-btn');
   if (loginButton) {
       loginButton.addEventListener('click', function(e) {
@@ -38,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
       });
   }
   
-  // Primary button functionality
+  // Funcionalidad del botón principal
   document.querySelectorAll('.primary-btn').forEach(button => {
       if (!button.classList.contains('login-btn')) {
           button.addEventListener('click', function(e) {
